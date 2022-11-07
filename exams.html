@@ -6,10 +6,9 @@
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
   <meta name="resource-type" content="document" />
   <meta name="distribution" content="global" />
-  <meta name="author" content="Fabricio Lima" />
-  <meta name="description" content="Network Security and Cloud mentoring" />
-  <meta name="keywords" content="security network firewall ips f5 cloud container azure defender threats incident response" />
-  <title>CyberSec Mentor</title>
+  <meta name="description" content="Certification Exams - Brain Dumps" />
+  <meta name="keywords" content="vce pdf testking pass4sure brain dumps certification ccna" />
+  <title>Exams4Free</title>
   <link href="bt2_main.css" rel="stylesheet" type="text/css" />
   <!--[if IE]>
   <link  href="bt2_ie.css" rel="stylesheet" type="text/css" />
@@ -29,8 +28,8 @@
 <!-- ***** Header ***** -->
 <div id="header">
   <span><img src="banner.jpg" width=468 height=60></span>
-  <h1>CyberSec Mentor</h1>
-  <h2>Network Security and Cloud mentoring</h2>
+  <h1>Exams4Free</h1>
+  <h2>PDF and VCE dumps for a successful exam</h2>
 </div>
 
 <!-- ***** Side Bar (LHS) ***** -->
@@ -38,26 +37,29 @@
   <!-- ***** Nav Menu ***** -->
   <!-- Note: All menu links except topmost one have margin-top set to compensate for IE anchor margin bug -->
   <div id="nmenu">
-    <span>Home</span>
-    <a style="margin-top: 2px" href="about.html">About me</a>
-    <a style="margin-top: 2px" href="mentoring.html">Mentoring</a>
-    <a style="margin-top: 2px" href="mailto:cybersec-mentor@hotmail.com?subject=CyberSec Mentoring">Contact Me</a>
+    <a href="index.php">Home</a>
+    <a style="margin-top: 2px" href="other.html">Other Info</a>
+    <a style="margin-top: 2px" href="getstarted.html">Getting Started</a>
+    <a style="margin-top: 2px" href="credits.html">Credits</a>
+    <a style="margin-top: 2px" href="mailto:Exams4Free@hotmail.com?subject=Certification Exams">Contact Me</a>
   </div>
   
   <div class="miscinfo">
-	<p>Certification Links:</p>
-	<p>&#8226; <a href="http://www.f5.com">f5 BigIP</a></p>
+	<p>Helpful Links:</p>
 	<p>&#8226; <a href="http://www.comptia.com">CompTIA</a></p>
-	<p>&#8226; <a href="http://www.eccouncil.org">Ethical Hacker</a></p>
-	<p>&nbsp;</p>
-	<p>Vendors:</p>
-	<p>&#8226; <a href="http://www.fortinet.com">Fortinet</a></p>
-	<p>&#8226; <a href="http://www.checkpoint.com">CheckPoint</a></p>
-	<p>&nbsp;</p>
-	<p>Useful notes:</p>
+	<p>&#8226; <a href="http://www.f5.com">f5 BigIP</a></p>
 	<p>&#8226; <a href="http://www.tech-wiki.net">Tech-Wiki.net</a></p>
+	<p>&#8226; <a href="http://www.pfsense.org">pfSense</a></p>
+	<p>&#8226; <a href="http://www.freenas.org">FreeNAS</a></p>
+	<p>&nbsp;</p>
+	<p>Favorite Websites:</p>
+	<p>&#8226; <a href="http://www.anandtech.com">AnandTech</a></p>
+	<p>&#8226; <a href="http://www.tomshardware.com">Tom's Hardware</a></p>
+	<p>&#8226; <a href="http://www.osnews.com">OSNews</a></p>
     <p>&nbsp;</p>
-	<p>Copyright &copy; 2022</br>All rights reserved.</p>
+	<p>Copyright &copy; 2019</br>All rights reserved.</p>
+	<p>&nbsp;</p>
+	<p>Site Design by <a href="http://Exams4Free.net">Exams4Free</a></p>
   </div>  
 </div>
 
@@ -68,7 +70,7 @@
 	<p>&nbsp;</p>
 	<p><strong>10-1-18:</strong> Submitted CISSP exam for approval. </p>
 	<p>&nbsp;</p>
-	<p><strong>9-30-18:</strong> Cisco CCNA to include <acronym title="World Wide Web Consortium">WiFi 6</acronym> concepts</p>
+	<p><strong>9-30-18:</strong> Cisco CCNA to include <acronym title="World Wide Web Consortium">WiFi 6</acronym> concepts.</p>
 	<p>&nbsp;</p>
 	<p><strong>9-29-18:</strong> Ethical Hacker v9 added.</p>
 	<p>&nbsp;</p>
@@ -91,32 +93,41 @@
 </div>
 
 <!-- ***** Content ***** -->
-<div class="title">Introduction</div>
+<div class="title"><?php echo ($_GET["vendor"]) ?> Exams</div>
 <div class="content">
-  <p>Sharing my knowledge, helping you to achieve success.</p>
+  Here you will find here the list of exams proposed by <?php echo ($_GET["vendor"]) ?>.</br>
   <p>&nbsp;</p>
-  <p>All exams VCE and PDF files are fully free shared by people and gathered throughout the years.</p>
 </div>
 
-<div class="title">Packages</div>
+<div class="title">Choose your Exam:</div>
 <div class="content">
-  <p>CyberSec coaching
-Cert preparation sec+ ceh</br>
-SIEM and soar (threat hunting, automated incident response)</br>
-Pick one topic from ...</br>
-<p>&nbsp;</p>
-Firewall (set up, policies, NAT, VPN, IPS, cluster)</br>
-Network troubleshooting</br>
-Scripting for Network Admins poweshell python vbscript </br>
-Cert preparation firewall (FG, CP) f5</br>
-<p>&nbsp;</p>
-Cloud computing, Hybrid cloud (migration)</br>
-cloud security (azure security, defender for cloud, Sentinel, purview, compliance)</br>
-Cert preparation azure aws</br>
-<p>&nbsp;</p>
-Container and kubernets</br>
-Lab environments (homeserver with proxmox / VMware esx / raspberry pi, personal Nas with plugins/apps)</br>
-</p>
+<table style="width:60%" border=0>
+  <tr>
+    <th>Exam Code</th>
+    <th>Exam Name</th>
+    <th># files</th>
+  </tr>
+  <?php $jsonExams = file_get_contents(($_GET["folder"]) . '/exams.json');
+      $arExams = json_decode($jsonExams,true);
+	  foreach ($arExams["exams"] as $key => $value) {
+		 echo ("<tr>");
+		   echo ("<td><a href=exam.php?vendor=" . urlencode($_GET["vendor"]) . "&folder=" . ($_GET["folder"]) . "&subfolder=") ; 
+		   if ($value["subfolder"]=='') 
+			   echo (urlencode(strtolower($value["exam-code"])));
+		   else 
+			   echo ($value["subfolder"]); 
+		   echo ("&exam-code=" . $value["exam-code"]. ">" . $value["exam-code"] . "</a></td>");
+		   echo ("<td>" . $value["exam-name"] . "</td>");
+		   echo ("<td>" . $value["exams_amount"] . "</td>");
+		 echo ("</tr>\n");
+	};?>
+</table>
+</div>
+
+<div class="title">About</div>
+<div class="content">
+<p><?php echo ($_GET["vendor"]) ?> certification exams are designed to ensure individuals have the knowledge and skills 
+to successfully master the topics covered in the exam <?php if (($_GET["products"]!='')) echo " in products such as " . ($_GET["products"]) ?> on daily basis.</p>
 </div>
 
 </body>

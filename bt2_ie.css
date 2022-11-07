@@ -1,0 +1,12 @@
+/*************************************************
+ * TITLE   : BlueTranquility 2 Stylesheet for IE * 
+ * REVISED : September 28, 2004                  *
+ * AUTHOR  : Linus "ElderDude" Gibson            *
+ * EMAIL   : linusgibson@yahoo.com               *
+ * SITE URL: http://linus.no-ip.com              *
+ ************************************************/
+
+/******** Side Bar (RHS) *******/
+div#rhsbar {
+  margin-right: 0px;
+}

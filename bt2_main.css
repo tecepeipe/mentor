@@ -1,0 +1,202 @@
+/*************************************************
+ * TITLE   : BlueTranquility 2 Global Stylesheet * 
+ * REVISED : September 28, 2004                  *
+ * AUTHOR  : Linus "ElderDude" Gibson            *
+ * EMAIL   : linusgibson@yahoo.com               *
+ * SITE URL: http://linus.no-ip.com              *
+ ************************************************/
+
+/******** General *******/
+a:link {
+  color: #00478D;
+}
+
+a:visited {
+  color: #00478D;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  color: #00478D;
+}
+
+body {
+  background-color: #EFEFEF;
+  font-family: Arial, "Times New Roman", Times, sans-serif;
+  padding: 10px 20px 10px 20px;
+}
+
+p {
+  text-align: justify;
+  margin: 0px 0px 0px 0px;
+}
+
+p.noheight {
+  line-height: 1.12em;
+}
+
+span.uline {
+  text-decoration: underline;
+}
+
+ul {
+  text-align: justify;
+}
+
+/* Note: Compensates for IE acronym dotted underline bug */
+acronym {
+  border-bottom: 1px dotted #000000;
+  cursor: help;
+}
+
+/******** Header *******/
+div#header {
+  background-color: #FFFFFF;
+  border: 1px solid #00478D;
+  padding: 5px 10px 10px 0px;
+  font-family: Georgia, "Times New Roman", Times, sans-serif;
+  width: auto;
+  margin: 0px 0px 10px 0px;
+}
+
+/* Note: Temporary Message for Ad Banner Area (remove if using banner image) */
+div#header span {
+  border: 1px solid #000000;
+  float: right;
+  margin: 5px 0px 0px 10px;
+  width: 468px;
+  height: 60px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Note: Optional Ad Banner Area (remove if not using banner image at all) */
+div#header img {
+  border: 1px solid #000000;
+  float: right;
+  margin: 5px 0px 0px 10px;
+  width: 468px;
+  height: 60px;
+}
+
+div#header h1 {
+  color: #00478D;
+  cursor: default;
+  font-size: 40px;
+  margin: 0px 0px 0px 10px;
+  width: 365px;
+}
+
+div#header h2 {
+  color: #414141;
+  cursor: default;
+  font-size: 13px;
+  margin: 5px 0px 0px 10px;
+  width: 365px;
+}
+
+/******** Side Bar (LHS) *******/
+div#lhsbar {
+  font-family: Verdana, "Times New Roman", Times, sans-serif;
+  float: left;
+  width: 114px;
+}
+
+div#lhsbar img {
+  border: none;
+}
+
+div#lhsbar p {
+  text-align: left;
+}
+
+/******** Side Bar (RHS) *******/
+div#rhsbar {
+  font-family: Verdana, "Times New Roman", Times, sans-serif;
+  float: right;
+  margin-right: 22px;
+  width: 114px;
+}
+
+div#rhsbar img {
+  border: none;
+}
+
+div#rhsbar p {
+  text-align: left;
+}
+
+/******** Nav Menu (goes at top of either Side Bar) *******/
+div#nmenu {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+div#nmenu span {
+  background-color: #00478D;
+  border: 1px solid #000000;
+  color: #FFFFFF;
+  cursor: default;
+  display: block;
+  text-decoration: none;
+  padding: 3px 10px 3px 10px;
+  width: 100%;
+}
+
+div#nmenu a {
+  background-color: #FFFFFF;
+  border: 1px solid #00478D;
+  display: block;
+  padding: 3px 10px 3px 10px;
+  width: 100%;
+}
+
+div#nmenu a:hover {
+  background-color: #00478D;
+  border-color: #000000;
+  color: #FFFFFF;
+}
+
+/******** News Section (goes at top of either Side Bar) *******/
+div#news {
+  background-color: #FFFFFF;
+  border: 1px solid #00478D;
+  font-size: 10px;
+  padding: 3px 10px 3px 10px;
+  width: 100%;
+}
+
+/******** Misc Info (goes at bottom of either Side Bar) *******/
+div.miscinfo {
+  background-color: #FFFFFF;
+  border: 1px solid #00478D;
+  font-size: 10px;
+  padding: 3px 10px 3px 10px;
+  margin-top: 8px;
+  width: 100%;
+}
+
+/******** Content *******/
+div.title {
+  background-color: #FFFFFF;
+  border-top: 1px solid #00478D;
+  border-right: 1px solid #00478D;
+  border-left: 1px solid #00478D;
+  color: #00478D;
+  font-family: Verdana, "Times New Roman", Times, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 3px 10px 3px 10px;
+  margin: 10px 150px 0px 150px;
+}
+
+div.content {
+  background-color: #FFFFFF;
+  border: 1px solid #00478D;
+  padding: 6px 10px 6px 10px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
